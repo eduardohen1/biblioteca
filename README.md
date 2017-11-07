@@ -16,3 +16,13 @@ Controle de livros
 * O sistema deverá ser desenvolvido na plataforma .NET ou JAVA;
 * O código deve ser disponibilizado no Github;
 * A internet é sua amiga
+
+## Banco de dados ##
+* Script na pasta do projeto - biblioteca.sql
+* MySQL
+* Parâmetros de conexão no 'application.properties'
+
+## Acesso ao sistema ##
+* Foi criado dois usuários, via banco de dados:
+** U: admin S: admin => Administrador
+** U: teste S: teste => Usuário para somente pesquisa

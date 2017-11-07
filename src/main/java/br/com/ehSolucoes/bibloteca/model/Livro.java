@@ -13,7 +13,7 @@ public class Livro {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long idLivros;
+	private Long codigo;
 	
 	@NotBlank
 	@Length(min=1, max=100)
@@ -27,12 +27,12 @@ public class Livro {
 	@Length(min=1, max=100)
 	private String isbn;
 
-	public Long getIdLivros() {
-		return idLivros;
+	public Long getCodigo() {
+		return codigo;
 	}
 
-	public void setIdLivros(Long idLivros) {
-		this.idLivros = idLivros;
+	public void setCodigo(Long codigo) {
+		this.codigo = codigo;
 	}
 
 	public String getNome() {
@@ -63,7 +63,7 @@ public class Livro {
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + ((idLivros == null) ? 0 : idLivros.hashCode());
+		result = prime * result + ((codigo == null) ? 0 : codigo.hashCode());
 		return result;
 	}
 
@@ -76,10 +76,10 @@ public class Livro {
 		if (getClass() != obj.getClass())
 			return false;
 		Livro other = (Livro) obj;
-		if (idLivros == null) {
-			if (other.idLivros != null)
+		if (codigo == null) {
+			if (other.codigo != null)
 				return false;
-		} else if (!idLivros.equals(other.idLivros))
+		} else if (!codigo.equals(other.codigo))
 			return false;
 		return true;
 	}

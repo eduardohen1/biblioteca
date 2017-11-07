@@ -9,9 +9,17 @@ public class Usuario {
 	@Id
 	private String username;
 	private String password;
+	private String name;
 	private Boolean enabled;
 	private String imagem;
 	
+	
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
 	public String getUsername() {
 		return username;
 	}

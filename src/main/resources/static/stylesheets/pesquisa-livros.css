@@ -1,0 +1,13 @@
+.av-table-livros-col-codigo, .av-table-livros-col-icons {
+	width: 60px;
+	text-align: center;
+}
+
+.av-table-livros-col-tipo {
+	width: 100px;
+}
+
+.av-table-livros-col-valor {
+	width: 150px;
+	text-align: right;
+}
